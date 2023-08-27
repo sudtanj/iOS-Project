@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4D13A49F2A9AF3F1006C5D4B /* Count.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D13A49E2A9AF3F1006C5D4B /* Count.swift */; };
 		4DB07D6B2A7DE60C004A52CA /* CounterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB07D6A2A7DE60C004A52CA /* CounterApp.swift */; };
 		4DB07D6D2A7DE60C004A52CA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB07D6C2A7DE60C004A52CA /* ContentView.swift */; };
 		4DB07D6F2A7DE60D004A52CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DB07D6E2A7DE60D004A52CA /* Assets.xcassets */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4D13A49E2A9AF3F1006C5D4B /* Count.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Count.swift; sourceTree = "<group>"; };
 		4DB07D672A7DE60C004A52CA /* Counter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Counter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DB07D6A2A7DE60C004A52CA /* CounterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterApp.swift; sourceTree = "<group>"; };
 		4DB07D6C2A7DE60C004A52CA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -71,9 +73,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4D13A49C2A9AF336006C5D4B /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				4D13A49D2A9AF3CB006C5D4B /* UseCase */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		4D13A49D2A9AF3CB006C5D4B /* UseCase */ = {
+			isa = PBXGroup;
+			children = (
+				4D13A49E2A9AF3F1006C5D4B /* Count.swift */,
+			);
+			path = UseCase;
+			sourceTree = "<group>";
+		};
 		4DB07D5E2A7DE60C004A52CA = {
 			isa = PBXGroup;
 			children = (
+				4D13A49C2A9AF336006C5D4B /* Core */,
 				4DB07D692A7DE60C004A52CA /* Counter */,
 				4DB07D7A2A7DE60D004A52CA /* CounterTests */,
 				4DB07D842A7DE60D004A52CA /* CounterUITests */,
@@ -259,6 +278,7 @@
 			files = (
 				4DB07D6D2A7DE60C004A52CA /* ContentView.swift in Sources */,
 				4DB07D6B2A7DE60C004A52CA /* CounterApp.swift in Sources */,
+				4D13A49F2A9AF3F1006C5D4B /* Count.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
